@@ -23,7 +23,16 @@ nav {
 }
 
 a {
-	color: #0000ff;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 3rem;
 }
 
 .container {
@@ -62,7 +71,7 @@ a {
 }
 
 .logo img {
-	margin-right: .25rem;
+	margin-right: .5rem;
 }
 
 .nav-aside ul {
@@ -95,7 +104,7 @@ a {
 .left-wrap {
 	display: flex;
 	align-items: center;
-	gap: 4rem;
+	gap: 4.5rem;
 }
 
 .shipping-alert p {
@@ -106,13 +115,122 @@ a {
 	font-weight: 600;
 }
 
-.demo-settings p {
+.demo-settings {
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
+}
+
+.demo-settings ul {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.demo-settings a {
+	text-decoration: none;
+	color: black;
+}
+
+.usa-icon-fix {
+	margin-right: .5rem;
+	margin-bottom: -2px;
+}
+
+.chev-icon {
+	margin-left: .5rem;
+}
+
+.li-div {
+	background-color: #ccc;
+	width: 1px;
+	height: .75rem;
 }
 
 .right-wrap {
 	display: flex;
 	align-items: center;
 	gap: 4rem;
+}
+
+.legal-links-wrap {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.legal-links-wrap a {
+	text-decoration: none;
+}
+
+.social-icons-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.social-icons-wrap a {
+	text-decoration: none;
+	padding: .5rem;
+}
+
+.shop-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0;
+}
+
+.shop-categories .grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ccc;
+	min-height: 500px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.shop-categories .grid-item h2 {
+	color: white;
+	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+}
+
+.shop-categories .grid-item {
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.shop-categories .grid-item:nth-of-type(1) {
+	background-image: url("../img/mens-category-cover.webp");
+}
+
+.shop-categories .grid-item:nth-of-type(2) {
+	background-image: url("../img/womens-category-cover.webp");
+}
+
+.shop-categories .grid-item:nth-of-type(3) {
+	background-image: url("../img/kids-category-cover.webp");
+}
+
+.btn-white {
+	background-color: white;
+	padding: 1.25rem 2rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2.5rem;
+	width: fit-content;
+	margin: 0 auto;
 }
