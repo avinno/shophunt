@@ -124,6 +124,7 @@ h2 {
 	gap: 1rem;
 	color: white;
 	text-decoration: none;
+	position: relative;
 }
 
 .discount-alert img:first-of-type {
@@ -137,6 +138,7 @@ h2 {
 .discount-alert span {
 	color: orangered;
 	font-weight: 700;
+	font-size: 1rem;
 }
 
 .left-wrap {
