@@ -86,6 +86,12 @@ h2 {
 	padding: .5rem;
 }
 
+.nav-aside a span {
+	display: flex;
+	width: 35px;
+	padding: .5rem;
+}
+
 .nav-main {
 	display: flex;
 	align-items: center;
