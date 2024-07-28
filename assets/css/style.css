@@ -28,11 +28,7 @@ header nav a {
 	font-weight: 500;
 	text-decoration: none;
 	transition: color .15s ease-in-out;
-}
-
-.nav-main li:first-of-type a {
-	color: var(--orange-red);
-	text-decoration: none;
+	padding: .5rem;
 }
 
 header nav a:hover {
@@ -142,7 +138,20 @@ h2 {
 
 .social-icons-wrap a {
 	text-decoration: none;
-	padding: .5rem;
+	padding: .75rem .5rem;
+}
+
+.social-icons svg {
+	height: 14px;
+	width: auto;
+}
+
+.social-icons-wrap svg path {
+	transition: fill .15s ease-in-out;
+}
+
+.social-icons-wrap a:hover svg path {
+	fill: black;
 }
 
 .header-nav {
@@ -182,6 +191,18 @@ a.logo:hover path {
 	fill: var(--orange-red);
 }
 
+.nav-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.nav-main li:first-of-type a {
+	color: var(--orange-red);
+	text-decoration: none;
+}
+
 .nav-aside ul {
 	display: flex;
 	align-items: center;
@@ -202,13 +223,6 @@ a.logo:hover path {
 
 .nav-aside a:hover path {
 	fill: var(--orange-red);
-}
-
-.nav-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
 }
 
 .discount-alert {
@@ -243,6 +257,30 @@ a.logo:hover path {
 	padding: .75rem 0;
 	justify-content: center;
 	z-index: 1;
+}
+
+.discount-alert-starting-icon svg {
+	height: 16px;
+}
+
+.discount-alert-starting-icon svg path {
+	fill: var(--orange-red);
+}
+
+.double-arrows-right-icon svg {
+	height: 16px;
+}
+
+.double-arrows-right-icon svg path {
+	fill: white;
+}
+
+.arrow-right-icon svg {
+	width: 12px;
+}
+
+.arrow-right-icon svg path {
+	fill: black;
 }
 
 .discount-alert .percent-off {
