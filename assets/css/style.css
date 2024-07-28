@@ -27,7 +27,7 @@ header nav a {
 	color: #000;
 	font-weight: 500;
 	text-decoration: none;
-	transition: color .25s ease-in-out;
+	transition: color .15s ease-in-out;
 }
 
 .nav-main li:first-of-type a {
@@ -107,6 +107,10 @@ h2 {
 	margin-left: .5rem;
 }
 
+.chev-icon svg {
+	width: 10px;
+}
+
 .li-div {
 	background-color: #ccc;
 	width: 1px;
@@ -163,11 +167,11 @@ h2 {
 }
 
 .logo path {
-	transition: fill .25s ease-in-out;
+	transition: fill .15s ease-in-out;
 }
 
 .logo-hut {
-	transition: color .25s ease-in-out;
+	transition: color .15s ease-in-out;
 }
 
 a.logo:hover .logo-hut {
@@ -193,7 +197,7 @@ a.logo:hover path {
 
 .nav-aside a span path {
 	fill: black;
-	transition: fill .25s ease-in-out;
+	transition: fill .15s ease-in-out;
 }
 
 .nav-aside a:hover path {
@@ -241,32 +245,25 @@ a.logo:hover path {
 	z-index: 1;
 }
 
-.discount-alert img:first-of-type {
-	border: 1px solid var(--orange-red);
-	width: 28px;
-	height: 28px;
-	padding: .2rem;
-	border-radius: 50%;
-}
-
 .discount-alert .percent-off {
 	color: var(--orange-red);
 	font-weight: 500;
 	font-size: 1rem;
-	padding: .5rem;
-	border: 1px dashed var(--orange-red);
 }
 
 .discount-code {
 	font-size: 1rem;
 	color: var(--orange-red);
+	padding: .25rem;
+	border: 1px dashed var(--orange-red);
+	font-weight: 500;
 }
 
 .discount-bar-illustration {
 	position: absolute;
     left: 0;
-    right: -18rem;
-    top: -12.6rem;
+    right: -16rem;
+    top: -12.85rem;
     bottom: 0;
     width: 400px;
     margin: 0 auto;
@@ -339,7 +336,7 @@ a.logo:hover path {
 	bottom: 2.5rem;
 	width: fit-content;
 	margin: 0 auto;
-	transition: gap .25s ease-in-out;
+	transition: gap .15s ease-in-out;
 }
 
 .btn-white:hover {
