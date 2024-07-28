@@ -72,15 +72,20 @@ h2 {
 	font-weight: 600;
 }
 
+.demo-settings a {
+	display: flex;
+}
+
 .shipping-icon {
 	width: 16px;
 }
 
 .country-icon {
 	width: 14px;
-	margin-right: .25rem;
-	position: relative;
-	top: .09rem;
+    margin-right: .5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .demo-settings {
@@ -97,6 +102,7 @@ h2 {
 .header-info-bar a {
 	text-decoration: none;
 	color: black;
+	display: flex;
 }
 
 .chev-icon {
