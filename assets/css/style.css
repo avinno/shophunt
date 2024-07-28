@@ -219,7 +219,6 @@ a.logo:hover path {
 	background-position: center;
 	position: relative;
 	overflow: hidden;
-	z-index: -1;
 }
 
 .discount-alert .container {
@@ -227,7 +226,6 @@ a.logo:hover path {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
-	z-index: 200;
 	position: relative;
 }
 
@@ -266,14 +264,19 @@ a.logo:hover path {
 
 .discount-bar-illustration {
 	position: absolute;
-	left: 0;
-	right: 19rem;
-	top: -13rem;
-	bottom: 0;
-	z-index: 100;
-	width: 5%;
-	margin: 0 auto;
-	mix-blend-mode: overlay;
+    left: 0;
+    right: -22rem;
+    top: -12.6rem;
+    bottom: 0;
+    width: 400px;
+    margin: 0 auto;
+    mix-blend-mode: overlay;
+}
+
+.discount-bar-illustration svg {
+	width: 100%;
+	position: relative;
+    z-index: 0;
 }
 
 .file-contract-icon {
