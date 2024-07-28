@@ -217,12 +217,18 @@ a.logo:hover path {
 	background-image: url("../img/diamonds.webp");
 	background-size: 5%;
 	background-position: center;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
 }
 
 .discount-alert .container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	gap: 1rem;
+	z-index: 200;
+	position: relative;
 }
 
 .discount-alert a {
@@ -232,8 +238,9 @@ a.logo:hover path {
 	color: white;
 	text-decoration: none;
 	position: relative;
-	padding: .75rem;
+	padding: .75rem 0;
 	justify-content: center;
+	z-index: 1;
 }
 
 .discount-alert img:first-of-type {
@@ -244,12 +251,33 @@ a.logo:hover path {
 	border-radius: 50%;
 }
 
-.discount-alert span {
+.discount-alert .percent-off {
 	color: var(--orange-red);
 	font-weight: 500;
 	font-size: 1rem;
 	padding: .5rem;
 	border: 1px dashed var(--orange-red);
+}
+
+.discount-code {
+	font-size: 1rem;
+	color: var(--orange-red);
+}
+
+.discount-bar-illustration {
+	position: absolute;
+	left: 0;
+	right: 19rem;
+	top: -13rem;
+	bottom: 0;
+	z-index: 100;
+	width: 5%;
+	margin: 0 auto;
+	mix-blend-mode: overlay;
+}
+
+.file-contract-icon {
+	width: 14px;
 }
 
 .shop-categories {
