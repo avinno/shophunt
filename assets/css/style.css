@@ -25,6 +25,13 @@ nav {
 header nav a {
 	color: #000;
 	font-weight: 500;
+	text-decoration: none;
+	transition: color .25s ease-in-out;
+}
+
+.nav-main li:first-of-type a {
+	color: orangered;
+	text-decoration: none;
 }
 
 header nav a:hover {
@@ -69,11 +76,27 @@ h2 {
 	text-decoration: none;
 	font-size: 1.5rem;
 	display: flex;
-	align-items: center;
 }
 
-.logo img {
+.logo-icon {
+	width: 24px;
 	margin-right: .5rem;
+}
+
+.logo path {
+	transition: fill .25s ease-in-out;
+}
+
+.logo-hut {
+	transition: color .25s ease-in-out;
+}
+
+a.logo:hover .logo-hut {
+	color: orangered;
+}
+
+a.logo:hover path {
+	fill: orangered;
 }
 
 .nav-aside ul {
@@ -82,15 +105,20 @@ h2 {
 	gap: .25rem;
 }
 
-.nav-aside img {
-	padding: .5rem;
-}
-
 .nav-aside a span {
 	display: flex;
 	height: 36px;
 	width: 36px;
 	padding: .5rem;
+}
+
+.nav-aside a span path {
+	fill: black;
+	transition: fill .25s ease-in-out;
+}
+
+.nav-aside a:hover path {
+	fill: orangered;
 }
 
 .nav-main {
@@ -103,13 +131,12 @@ h2 {
 .discount-alert {
 	background-color: #000;
 	color: #fff;
-	padding: 1.25rem 0;
 	text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 500;
 	background-image: url("../img/diamonds.webp");
-	background-size: 10%;
+	background-size: 5%;
 	background-position: center;
 }
 
@@ -126,6 +153,7 @@ h2 {
 	color: white;
 	text-decoration: none;
 	position: relative;
+	padding: 1.25rem 0;
 }
 
 .discount-alert img:first-of-type {
@@ -271,6 +299,11 @@ h2 {
 	bottom: 2.5rem;
 	width: fit-content;
 	margin: 0 auto;
+	transition: gap .25s ease-in-out;
+}
+
+.btn-white:hover {
+	gap: 1.5rem;
 }
 
 .shopping-perks-wrap {
