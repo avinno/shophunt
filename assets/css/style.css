@@ -275,6 +275,10 @@ a.logo:hover path {
 	fill: white;
 }
 
+.arrow-right-icon {
+	display: flex;
+}
+
 .arrow-right-icon svg {
 	width: 12px;
 }
