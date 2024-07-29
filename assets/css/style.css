@@ -16,6 +16,10 @@ body {
 	font-family: Poppins, sans-serif;
 }
 
+p {
+	line-height: 1.5rem;
+}
+
 header {}
 
 nav {
@@ -406,12 +410,13 @@ a.logo:hover path {
 	flex-direction: row:;
 	align-items: flex-start;
 	gap: 1.5rem;
+	justify-content: center;
 }
 
 .perk-copy-wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: .75rem;
+	gap: .25rem;
 }
 
 .perk-icon svg {
