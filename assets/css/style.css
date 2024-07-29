@@ -400,7 +400,7 @@ a.logo:hover path {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 4rem;
-	padding: 3rem 0;
+	padding: 2.25rem 0;
 	border-bottom: 1px solid #ddd;
 	justify-content: center;
 }
