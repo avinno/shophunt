@@ -424,7 +424,7 @@ a.logo:hover path {
 }
 
 .perk-icon svg path {
-	fill: black;
+	fill: var(--orange-red);
 }
 
 .shopping-perks-wrap p:nth-of-type(1) {
