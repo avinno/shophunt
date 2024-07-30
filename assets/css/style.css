@@ -18,6 +18,7 @@ body {
 
 p {
 	line-height: 1.5rem;
+	color: #333;
 }
 
 header {}
@@ -25,6 +26,10 @@ header {}
 nav {
 	display: flex;
 	justify-content: space-between;
+}
+
+section {
+	padding: 7rem 0 3.5rem 0;
 }
 
 header nav a {
@@ -43,6 +48,11 @@ header nav a:hover {
 h2 {
 	font-weight: 600;
 	font-size: 3rem;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 2.5rem;
 }
 
 .container {
@@ -348,7 +358,7 @@ a.logo:hover path {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #888;
+	background-color: #eee;
 	min-height: 500px;
 	border-right: 1px solid black;
 	border-bottom: 1px solid black;
@@ -442,4 +452,38 @@ a.logo:hover path {
 	color: #666;
 	display: flex;
 	flex-direction: column;
+}
+
+.top-picks-copy-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#section-top-picks .container {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+#section-top-picks .heading-lockup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#section-top-picks .pre-heading {
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.collections-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
 }
