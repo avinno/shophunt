@@ -420,7 +420,7 @@ a.logo:hover path {
 .perk-copy-wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: .25rem;
+	gap: .15rem;
 }
 
 .perk-icon svg {
@@ -439,8 +439,7 @@ a.logo:hover path {
 
 .shopping-perks-wrap p:nth-of-type(2) {
 	font-size: 14px;
-	color: #888;
+	color: #666;
 	display: flex;
 	flex-direction: column;
-	gap: .75rem;
 }
