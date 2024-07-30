@@ -55,6 +55,11 @@ h3 {
 	font-size: 2.5rem;
 }
 
+h4 {
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -465,7 +470,7 @@ a.logo:hover path {
 #section-top-picks .container {
 	display: flex;
 	flex-direction: column;
-	gap: 6rem;
+	gap: 5rem;
 }
 
 #section-top-picks .heading-lockup {
@@ -488,19 +493,69 @@ a.logo:hover path {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 2rem;
+	grid-template-areas:
+		"one two two"
+		"three three four";
+}
+
+.collections-grid .grid-item {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	min-height: 400px;
+	background-color: #eee;
+	padding: 4rem;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+.collections-grid a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.collections-grid .grid-item svg {
+	width: 12px;
+	margin-left: 1rem;
 }
 
 .grid-item-1 {
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: one;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/womens-summer-wear.webp");
+	background-size: cover;
+	background-position-y: -16rem;
 }
 .grid-item-2 {
-	grid-area: 1 / 2 / 2 / 4;
+	grid-area: two;
+	color: black;
+	align-items: flex-start!important;
+	background-image: url("../img/mens-suits.webp");
+	background-size: cover;
+	background-position: center;
 }
 .grid-item-3 {
-	grid-area: 2 / 1 / 3 / 3;
+	grid-area: three;
+	color: black;
+	align-items: flex-start!important;
+	background-image: url("../img/womens-active-wear.webp");
+	background-size: cover;
+	background-position-y: -48rem;
 }
 .grid-item-4 {
-	grid-area: 2 / 3 / 3 / 4;
+	grid-area: four;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/mens-watches.webp");
+	background-size: cover;
+	background-position: center;
 }
 
-.collections-grid .grid-item {}
+.collections-grid h4, .collections-grid a {
+	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+}
