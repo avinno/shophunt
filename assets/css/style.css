@@ -528,8 +528,9 @@ a.logo:hover path {
 	align-items: center;
 	background-image: url("../img/womens-summer-wear.webp");
 	background-size: cover;
-	background-position-y: -16rem;
-	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+	background-position-y: 0rem;
+	background-position-x: 0rem;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
 }
 .grid-item-2 {
 	grid-area: two;
@@ -545,8 +546,8 @@ a.logo:hover path {
 	color: black;
 	align-items: flex-start!important;
 	background-image: url("../img/womens-active-wear.webp");
-	background-size: 50%;
-	background-position-y: -11rem;
+	background-size: 40%;
+	background-position-y: -4rem;
 	background-position-x: 32rem;
 }
 .grid-item-4 {
@@ -557,5 +558,5 @@ a.logo:hover path {
 	background-image: url("../img/mens-watches.webp");
 	background-size: cover;
 	background-position: center;
-	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
 }
