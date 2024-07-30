@@ -333,6 +333,10 @@ a.logo:hover path {
 	width: 14px;
 }
 
+.file-contract-icon svg path {
+	fill: var(--orange-red);
+}
+
 .shop-categories {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
