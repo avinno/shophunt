@@ -507,6 +507,8 @@ a.logo:hover path {
 	padding: 4rem;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
+	position: relative;
+	overflow: hidden;
 }
 
 .collections-grid a {
@@ -532,24 +534,59 @@ a.logo:hover path {
 	background-position-x: 0rem;
 	text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
 }
+
 .grid-item-2 {
 	grid-area: two;
 	color: black;
 	align-items: flex-start!important;
-	background-image: url("../img/mens-suits.webp");
-	background-size: cover;
-	background-position-x: 100px;
-	background-position-y: 0;
 }
+
+.grid-item-2 img {
+	right: -5rem;
+	top: 0;
+	width: 800px;
+}
+
+.grid-item-2 img, .grid-item-3 img {
+	position: absolute;
+}
+
+.savings-alert {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background-color: var(--orange-red);
+	padding: 1.25rem;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	gap: .25rem;
+	z-index: 1;
+}
+
+.savings-alert span {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
 .grid-item-3 {
 	grid-area: three;
 	color: black;
 	align-items: flex-start!important;
-	background-image: url("../img/womens-active-wear.webp");
-	background-size: 40%;
-	background-position-y: -4rem;
-	background-position-x: 32rem;
 }
+
+.grid-item-3 img {
+	right: 5rem;
+	top: -5.5rem;
+	width: 400px;
+}
+
 .grid-item-4 {
 	grid-area: four;
 	color: #fff;
